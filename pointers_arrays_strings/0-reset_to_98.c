@@ -7,6 +7,6 @@
  */
 void reset_to_98(int *n)
 {
-	int *j = 98;
-	int p = &j;
+	int *window = 98;
+	int wall = &window;
 }
