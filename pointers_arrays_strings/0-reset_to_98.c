@@ -1,12 +1,13 @@
+#include <stdio.h>
 #include "main.h"
-
 /**
- * reset_to_98 - check the code
+ * reset_to_98 - Takes a pointer to an int and updates the value it points to 98
  *
- * Return: Always 0 (Success).
+ *@n: an integer input pointer
+ *
+ * Return: Nothing.
  */
 void reset_to_98(int *n)
 {
-	int *window = 98;
-	int wall = &window;
+	*n = 98;
 }
