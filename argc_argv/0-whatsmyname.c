@@ -2,15 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main - main function prints the name of the file
- * @argc: counts the argument in this case we did not use it thats why it has __attribute__((unused))
+ * main - prints the name of the program
+ * @argc: counts the argument in this case not used
  * @argv: counts the string array
  *
+ * Return: Always 0 (success)
  */
 
 int main(int argc __attribute__((unused)), char *argv[])
 {
 	printf("%s\n", argv[0]);
 
-	return(0);
+	return (0);
 }
