@@ -1,0 +1,1 @@
+This directory was made to learn how to use function pointers.
