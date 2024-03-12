@@ -2,8 +2,8 @@
 #include "dog.h"
 
 /**
- *
- *
+ * free_dog - frees space auto allocated
+ * @d: points to structure
  *
  *
  */
