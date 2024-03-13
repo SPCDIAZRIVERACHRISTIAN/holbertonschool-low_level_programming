@@ -16,16 +16,16 @@ int (*get_op_func(char *s))(int, int)
             {"-", op_sub},
             {"*", op_mul},
             {"/", op_div},
-         {"%", op_mod},
-         {NULL, NULL}
-        };
-        int i;
+            {"%", op_mod},
+            {NULL, NULL}
+    };
+    int i;
 
-        i = 0;
-        //only one while and if
-    while (ops.op[i])
+    i = 0;
+
+    while (ops[i].op)
         {
-            if (strcmp(ops.op[i], s) == 0)
+            if (strcmp(ops[i].op, s) == 0)
             {
                 return(ops[i].f);
             }
