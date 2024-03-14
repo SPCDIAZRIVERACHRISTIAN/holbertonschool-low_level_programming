@@ -7,10 +7,9 @@
  * 
 */
 
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
     int c, d, res;
-    char e;
     int (*fun)(int, int);
 
     if (argc != 4)
@@ -19,7 +18,7 @@ int main (int argc, char *argv[])
         exit(98);
     }
 
-    c = atoi(argv [1]);
+    c = atoi(argv[1]);
     d = atoi(argv[3]);
     fun = get_op_func(argv[2]);
 
@@ -28,16 +27,10 @@ int main (int argc, char *argv[])
         printf("Error\n");
         exit(99);
     }
-    e = * argv[2];
-    if ((e == '%' || e == '/') && e == 0)
-    {
-        printf("Error\n");
-        exit(100);
-    }
 
     res = fun(c, d);
     
     printf("%d\n", res);
 
-    return (res);
+    return (0);
 }
