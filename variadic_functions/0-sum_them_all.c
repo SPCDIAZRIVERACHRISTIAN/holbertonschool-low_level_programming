@@ -1,10 +1,10 @@
 #include "variadic_functions.h"
 
 /**
+ * sum_them_all - adds al the numbers given
+ * @n: arguments that goes in function
  *
- *
- *
- *
+ * Return: returns the sum of all numbers
  */
 
 int sum_them_all(const unsigned int n, ...)
