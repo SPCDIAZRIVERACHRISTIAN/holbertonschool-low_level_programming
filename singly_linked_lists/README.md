@@ -1,0 +1,1 @@
+this directory holds projects done in c where we learned to deal with linked lists.
