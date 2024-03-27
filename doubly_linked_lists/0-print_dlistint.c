@@ -16,7 +16,7 @@ size_t print_dlistint(const dlistint_t *h)
 		if (!h)
 		{
 			printf("(nil)");
-			return;
+			 return (1);
 		}
 		else
 		{
