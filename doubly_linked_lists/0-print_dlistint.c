@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
+ * printdlistint - prints size of link list
+ * @h: points to the link list structure
  * 
- * 
- * 
- * 
+ * return: size of the list
 */
 
 size_t print_dlistint(const dlistint_t *h)

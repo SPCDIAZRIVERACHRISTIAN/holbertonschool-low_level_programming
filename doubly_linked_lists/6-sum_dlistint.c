@@ -1,10 +1,10 @@
 #include "lists.h"
 
 /**
+ * sum_dlistint - adds all the values in list
+ * @head: points to start of list
  * 
- * 
- * 
- * 
+ * Return: summary of nodes
 */
 
 int sum_dlistint(dlistint_t *head)

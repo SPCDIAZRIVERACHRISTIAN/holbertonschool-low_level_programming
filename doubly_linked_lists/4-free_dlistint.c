@@ -1,9 +1,8 @@
 #include "lists.h"
 
 /**
- * 
- * 
- * 
+ * free_dlistint - frees link list memory
+ * @head: points to the start of list
  * 
 */
 
