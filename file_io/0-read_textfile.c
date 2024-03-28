@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * read_textfile - Writes a function that reads a text file and prints it to the POSIX
+ * read_textfile - Writes a function that reads a text file and prints
  * @filename: name of the file to be read
  * @letters: number of letters
- * 
+ *
  * Return: returns the written text and numbers
 */
 
