@@ -10,28 +10,22 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t o, r, w;
-	char *words;
+	ssize_t fd, w, r;
+	char *wordc;
 
-	if (filename == NULL)
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
 		return (0);
 
-	words = malloc(sizeof(char) * letters);
-	if (words == NULL)
-	{
-		free(words);
-		return (0);
-	}
+	wordc = malloc(sizeof(char) * letters);
+	if (wordc == NULL)
+		return(0);
 
-	o = open(filename, O_RDONLY);
-	r = read(o, words, letters);
-	w = write(1, words, letters);
+	r = read(fd, wordc, letters);
+	w = write(STDOUT_FILENO, wordc, r);
 
-	if (o == -1 || r == -1 || w == -1 || w != r)
-	{
-		free(words);
-		return (0);
-	}
-	free(words);
+	free(wordc);
+	close(fd);
+
 	return (w);
 }
